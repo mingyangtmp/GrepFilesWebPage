@@ -463,11 +463,14 @@ select {
 
 .shot-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 22px;
 }
 
 .shot-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
+  align-items: center;
   overflow: hidden;
   background: #ffffff;
   border: 1px solid rgba(19, 32, 43, 0.08);
@@ -477,9 +480,10 @@ select {
 
 .shot-item img {
   width: 100%;
-  aspect-ratio: 1800 / 1158;
-  object-fit: cover;
-  border-bottom: 1px solid rgba(19, 32, 43, 0.08);
+  height: auto !important;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-right: 1px solid rgba(19, 32, 43, 0.08);
 }
 
 .shot-item div {
@@ -643,9 +647,17 @@ select {
   .hero-facts,
   .steps,
   .feature-grid,
-  .shot-grid,
   .audience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shot-item {
+    grid-template-columns: 1fr;
+  }
+
+  .shot-item img {
+    border-right: 0;
+    border-bottom: 1px solid rgba(19, 32, 43, 0.08);
   }
 
   .section-heading,
@@ -716,7 +728,6 @@ select {
   .hero-facts,
   .steps,
   .feature-grid,
-  .shot-grid,
   .audience-grid {
     grid-template-columns: 1fr;
   }
