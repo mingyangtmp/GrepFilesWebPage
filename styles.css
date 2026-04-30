@@ -2,12 +2,12 @@
   color-scheme: light;
   --bg: #eef6f9;
   --bg-strong: #dcecf4;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: rgba(255, 255, 255, 0.92);
-  --surface-border: rgba(22, 68, 92, 0.1);
-  --text: #15344a;
-  --text-soft: #557082;
-  --text-faint: #7b92a2;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: rgba(255, 255, 255, 0.98);
+  --surface-border: rgba(22, 68, 92, 0.14);
+  --text: #0e2b3f;
+  --text-soft: #3d596e;
+  --text-faint: #61798c;
   --accent: #206b8b;
   --accent-strong: #0f506c;
   --accent-mint: #2a9d8f;
@@ -20,8 +20,8 @@
   --radius-lg: 24px;
   --radius-md: 18px;
   --radius-sm: 14px;
-  --font-display: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
-  --font-body: "Avenir Next", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   --max-width: 1180px;
 }
 
@@ -44,8 +44,12 @@ body {
     linear-gradient(230deg, rgba(121, 188, 220, 0.68), transparent 36%),
     linear-gradient(180deg, #f8fcff 0%, var(--bg) 34%, #f6f8fb 100%);
   font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.65;
   letter-spacing: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 img {
@@ -129,7 +133,7 @@ select:focus-visible {
 
 .section,
 .signal-grid {
-  animation: rise-in 0.72s ease both;
+  animation: rise-in 0.42s ease both;
 }
 
 .site-header {
@@ -142,10 +146,9 @@ select:focus-visible {
   gap: 1rem;
   padding: 0.85rem 1rem;
   margin-bottom: 1.5rem;
-  background: rgba(255, 255, 255, 0.66);
+  background: #fff;
   border: 1px solid rgba(255, 255, 255, 0.78);
   border-radius: 999px;
-  backdrop-filter: blur(18px);
   box-shadow: var(--shadow-md);
 }
 
@@ -365,7 +368,7 @@ select:focus-visible {
 }
 
 .device-frame {
-  transform: rotate(1.4deg);
+  transform: none;
 }
 
 .device-frame img,
@@ -382,9 +385,8 @@ select:focus-visible {
   width: min(18rem, 52%);
   padding: 1rem;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(16px);
   box-shadow: var(--shadow-lg);
 }
 
@@ -518,7 +520,7 @@ select:focus-visible {
   gap: 1.4rem;
   align-items: center;
   padding: 1.2rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .gallery-tabs {
@@ -648,7 +650,7 @@ select:focus-visible {
 .policy-grid article {
   padding: 1rem;
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(22, 68, 92, 0.08);
 }
 
@@ -665,7 +667,7 @@ select:focus-visible {
   align-items: start;
   padding: 2rem;
   border-radius: var(--radius-xl);
-  background: rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.82);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: var(--shadow-lg);
 }
@@ -723,7 +725,7 @@ select:focus-visible {
 
 .faq-list details {
   padding: 1rem 1.2rem;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .faq-list summary {
@@ -763,12 +765,10 @@ select:focus-visible {
 
 @keyframes rise-in {
   from {
-    opacity: 0;
-    transform: translateY(18px);
+    opacity: 0.01;
   }
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
@@ -816,6 +816,10 @@ select:focus-visible {
 }
 
 @media (max-width: 760px) {
+  [id] {
+    scroll-margin-top: 260px;
+  }
+
   .site-shell {
     width: min(calc(100% - 1rem), var(--max-width));
   }

@@ -68,25 +68,25 @@ const translations = {
         plain: {
           title: "普通搜索：快速找到上下文",
           text: "导入多个目录后输入关键词，即可按文件分组查看匹配行、行号和高亮范围。适合源码、日志、笔记和配置文件的日常检索。",
-          image: "assets/screenshots/plain-search.jpg",
+          image: "assets/screenshots/plain-search.png",
           alt: "GrepFiles 普通搜索视图，展示关键词搜索结果、高亮匹配和文件分组"
         },
         regex: {
           title: "正则搜索：处理复杂模式",
           text: "使用正则表达式查找多个候选词、结构化日志和特定边界内容。无效正则会给出错误提示，不会中断应用。",
-          image: "assets/screenshots/regex-search.jpg",
+          image: "assets/screenshots/regex-search.png",
           alt: "GrepFiles 正则表达式搜索视图，展示正则查询和匹配结果"
         },
         replace: {
           title: "替换预览：确认之后再写入",
           text: "批量替换前先看到每个文件、每一处匹配的替换前后内容。你可以只勾选真正要修改的部分。",
-          image: "assets/screenshots/replace-preview.jpg",
+          image: "assets/screenshots/replace-preview.png",
           alt: "GrepFiles 替换预览视图，展示可勾选的替换候选项"
         },
         history: {
           title: "历史记录：回看已经完成的搜索",
           text: "搜索历史会保存查询、选项、文件摘要和结果快照。再次打开历史项时，可以按当时的结果继续查看。",
-          image: "assets/screenshots/history.jpg",
+          image: "assets/screenshots/history.png",
           alt: "GrepFiles 历史搜索视图，展示历史项和搜索结果快照"
         }
       }
@@ -206,10 +206,10 @@ const translations = {
       tabsAria: "截圖切換",
       tabs: { plain: "普通搜尋", regex: "正則搜尋", replace: "取代預覽", history: "歷史記錄" },
       items: {
-        plain: { title: "普通搜尋：快速找到上下文", text: "匯入多個目錄後輸入關鍵字，即可按檔案分組查看匹配行、行號和醒目提示範圍。適合原始碼、日誌、筆記和設定檔的日常檢索。", image: "assets/screenshots/plain-search.jpg", alt: "GrepFiles 普通搜尋視圖，展示關鍵字搜尋結果、醒目提示和檔案分組" },
-        regex: { title: "正則搜尋：處理複雜模式", text: "使用正則表示式查找多個候選詞、結構化日誌和特定邊界內容。無效正則會給出錯誤提示，不會中斷應用程式。", image: "assets/screenshots/regex-search.jpg", alt: "GrepFiles 正則表示式搜尋視圖，展示正則查詢和匹配結果" },
-        replace: { title: "取代預覽：確認之後再寫入", text: "批次取代前先看到每個檔案、每一處匹配的取代前後內容。你可以只勾選真正要修改的部分。", image: "assets/screenshots/replace-preview.jpg", alt: "GrepFiles 取代預覽視圖，展示可勾選的取代候選項" },
-        history: { title: "歷史記錄：回看已完成的搜尋", text: "搜尋歷史會保存查詢、選項、檔案摘要和結果快照。再次打開歷史項時，可以按當時的結果繼續查看。", image: "assets/screenshots/history.jpg", alt: "GrepFiles 歷史搜尋視圖，展示歷史項和搜尋結果快照" }
+        plain: { title: "普通搜尋：快速找到上下文", text: "匯入多個目錄後輸入關鍵字，即可按檔案分組查看匹配行、行號和醒目提示範圍。適合原始碼、日誌、筆記和設定檔的日常檢索。", image: "assets/screenshots/plain-search.png", alt: "GrepFiles 普通搜尋視圖，展示關鍵字搜尋結果、醒目提示和檔案分組" },
+        regex: { title: "正則搜尋：處理複雜模式", text: "使用正則表示式查找多個候選詞、結構化日誌和特定邊界內容。無效正則會給出錯誤提示，不會中斷應用程式。", image: "assets/screenshots/regex-search.png", alt: "GrepFiles 正則表示式搜尋視圖，展示正則查詢和匹配結果" },
+        replace: { title: "取代預覽：確認之後再寫入", text: "批次取代前先看到每個檔案、每一處匹配的取代前後內容。你可以只勾選真正要修改的部分。", image: "assets/screenshots/replace-preview.png", alt: "GrepFiles 取代預覽視圖，展示可勾選的取代候選項" },
+        history: { title: "歷史記錄：回看已完成的搜尋", text: "搜尋歷史會保存查詢、選項、檔案摘要和結果快照。再次打開歷史項時，可以按當時的結果繼續查看。", image: "assets/screenshots/history.png", alt: "GrepFiles 歷史搜尋視圖，展示歷史項和搜尋結果快照" }
       }
     },
     shots: [
@@ -686,10 +686,10 @@ function galleryText(config) {
     tabsAria: config.tabsAria,
     tabs: config.tabs,
     items: {
-      plain: { title: config.plainTitle, text: config.plainText, image: "assets/screenshots/plain-search.jpg", alt: `${config.altBase}: plain search` },
-      regex: { title: config.regexTitle, text: config.regexText, image: "assets/screenshots/regex-search.jpg", alt: `${config.altBase}: regex search` },
-      replace: { title: config.replaceTitle, text: config.replaceText, image: "assets/screenshots/replace-preview.jpg", alt: `${config.altBase}: replacement preview` },
-      history: { title: config.historyTitle, text: config.historyText, image: "assets/screenshots/history.jpg", alt: `${config.altBase}: history` }
+      plain: { title: config.plainTitle, text: config.plainText, image: "assets/screenshots/plain-search.png", alt: `${config.altBase}: plain search` },
+      regex: { title: config.regexTitle, text: config.regexText, image: "assets/screenshots/regex-search.png", alt: `${config.altBase}: regex search` },
+      replace: { title: config.replaceTitle, text: config.replaceText, image: "assets/screenshots/replace-preview.png", alt: `${config.altBase}: replacement preview` },
+      history: { title: config.historyTitle, text: config.historyText, image: "assets/screenshots/history.png", alt: `${config.altBase}: history` }
     }
   };
 }
