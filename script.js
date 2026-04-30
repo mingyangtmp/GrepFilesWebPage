@@ -491,6 +491,178 @@ Object.assign(translations, {
   })
 });
 
+const sharedPolicyTranslations = {
+  "zh-Hans": {
+    skipLink: "跳转到正文",
+    policy: {
+      heroLink: "阅读隐私政策",
+      kicker: "隐私政策",
+      title: "GrepFiles 按本地优先方式设计，不依赖云端处理文件内容。",
+      lead: "以下说明基于当前应用功能：本地搜索、本地历史、macOS 沙盒授权、安全书签、结果导出与可确认的批量替换。",
+      effective: "生效日期：2026年4月30日"
+    },
+    policyItems: [
+      { index: "01", title: "处理的信息", text: "应用会读取你主动导入或通过预设授权的文件夹，处理查询词、搜索选项、匹配结果、替换预览、导出内容和本地历史记录。" },
+      { index: "02", title: "使用目的", text: "这些信息仅用于在本机完成搜索、显示结果、复制或导出报告、准备替换预览、执行用户确认的替换以及恢复历史快照。" },
+      { index: "03", title: "网络与第三方", text: "当前网页所描述的 GrepFiles 功能不需要账户、云端索引、远程渲染或文件上传；应用不会把查询、路径或文件内容发送到服务器。" },
+      { index: "04", title: "本地存储", text: "导入目录、安全书签、搜索预设、最近历史和替换记录保存在这台 Mac 的应用数据中。删除历史项或移除目录只会改变应用状态，不会删除磁盘文件。" },
+      { index: "05", title: "你的控制权", text: "你可以选择导入哪些文件夹、移除目录授权、清理历史、取消替换候选项，并决定是否复制或导出结果。" },
+      { index: "06", title: "政策更新", text: "如果未来版本加入同步、账户、分析或其他网络功能，应同步更新本政策和发布说明，让网页描述与实际行为保持一致。" }
+    ]
+  },
+  "zh-Hant": {
+    skipLink: "跳到正文",
+    policy: {
+      heroLink: "閱讀隱私政策",
+      kicker: "隱私政策",
+      title: "GrepFiles 以本機優先方式設計，不依賴雲端處理檔案內容。",
+      lead: "以下說明基於目前應用程式功能：本機搜尋、本機歷史、macOS 沙盒授權、安全書籤、結果匯出與可確認的批次取代。",
+      effective: "生效日期：2026年4月30日"
+    },
+    policyItems: [
+      { index: "01", title: "處理的資訊", text: "應用程式會讀取你主動匯入或透過預設授權的資料夾，處理查詢詞、搜尋選項、匹配結果、取代預覽、匯出內容和本機歷史記錄。" },
+      { index: "02", title: "使用目的", text: "這些資訊僅用於在本機完成搜尋、顯示結果、複製或匯出報告、準備取代預覽、執行你確認的取代以及恢復歷史快照。" },
+      { index: "03", title: "網路與第三方", text: "目前頁面描述的 GrepFiles 功能不需要帳戶、雲端索引、遠端渲染或檔案上傳；應用程式不會把查詢、路徑或檔案內容傳送到伺服器。" },
+      { index: "04", title: "本機儲存", text: "匯入目錄、安全書籤、搜尋預設、最近歷史和取代記錄會保存在這台 Mac 的應用程式資料中。刪除歷史或移除目錄不會刪除磁碟檔案。" },
+      { index: "05", title: "你的控制權", text: "你可以選擇匯入哪些資料夾、移除目錄授權、清理歷史、取消取代候選項，並決定是否複製或匯出結果。" },
+      { index: "06", title: "政策更新", text: "如果未來版本加入同步、帳戶、分析或其他網路功能，應同步更新本政策和發行說明，讓網站描述與實際行為保持一致。" }
+    ]
+  },
+  en: {
+    skipLink: "Skip to content",
+    policy: {
+      heroLink: "Read privacy policy",
+      kicker: "Privacy Policy",
+      title: "GrepFiles is designed local-first and does not rely on cloud processing for file content.",
+      lead: "This policy reflects the current product behavior: local search, local history, macOS sandbox authorization, security bookmarks, result export, and confirmable batch replacement.",
+      effective: "Effective date: April 30, 2026"
+    },
+    policyItems: [
+      { index: "01", title: "Information processed", text: "The app reads folders you import or authorize through presets, and processes queries, search options, matches, replacement previews, exported content, and local history records." },
+      { index: "02", title: "Purpose of use", text: "That information is used only to search locally, show results, copy or export reports, prepare replacement previews, apply user-confirmed replacements, and restore history snapshots." },
+      { index: "03", title: "Network and third parties", text: "The GrepFiles features described here do not require accounts, cloud indexing, remote rendering, or file uploads; queries, paths, and file content are not sent to a server." },
+      { index: "04", title: "Local storage", text: "Imported folders, security bookmarks, presets, recent history, and replacement records are stored in app data on this Mac. Removing history or folders changes app state only and does not delete disk files." },
+      { index: "05", title: "Your controls", text: "You choose which folders to import, can remove folder authorization, clear history, deselect replacement candidates, and decide whether to copy or export results." },
+      { index: "06", title: "Policy updates", text: "If a future release adds sync, accounts, analytics, or other network features, this policy and the release notes should be updated so the website matches actual behavior." }
+    ]
+  },
+  es: {
+    skipLink: "Saltar al contenido",
+    policy: {
+      heroLink: "Leer política de privacidad",
+      kicker: "Política de privacidad",
+      title: "GrepFiles está diseñado con prioridad local y no depende de la nube para procesar contenido.",
+      lead: "Esta política refleja el comportamiento actual: búsqueda local, historial local, autorización del sandbox de macOS, marcadores seguros, exportación y reemplazo por lotes confirmado.",
+      effective: "Fecha de vigencia: 30 de abril de 2026"
+    },
+    policyItems: [
+      { index: "01", title: "Información procesada", text: "La app lee las carpetas que importas o autorizas con presets, y procesa consultas, opciones, coincidencias, vistas previas de reemplazo, exportaciones e historial local." },
+      { index: "02", title: "Finalidad", text: "Esa información se usa solo para buscar localmente, mostrar resultados, copiar o exportar informes, preparar reemplazos, aplicar cambios confirmados y restaurar instantáneas." },
+      { index: "03", title: "Red y terceros", text: "Las funciones descritas no requieren cuenta, índice en la nube, renderizado remoto ni carga de archivos; consultas, rutas y contenido no se envían a servidores." },
+      { index: "04", title: "Almacenamiento local", text: "Carpetas importadas, marcadores seguros, presets, historial y registros de reemplazo se guardan en los datos de la app en este Mac." },
+      { index: "05", title: "Tus controles", text: "Tú eliges qué carpetas importar, puedes quitar permisos, limpiar historial, desmarcar candidatos de reemplazo y decidir si copias o exportas resultados." },
+      { index: "06", title: "Actualizaciones", text: "Si una versión futura añade sincronización, cuentas, analítica u otras funciones de red, esta política y las notas de versión deberán actualizarse." }
+    ]
+  },
+  fr: {
+    skipLink: "Aller au contenu",
+    policy: {
+      heroLink: "Lire la politique de confidentialité",
+      kicker: "Politique de confidentialité",
+      title: "GrepFiles est conçu en priorité locale et ne dépend pas du cloud pour traiter les fichiers.",
+      lead: "Cette politique décrit le comportement actuel : recherche locale, historique local, autorisation sandbox macOS, signets de sécurité, export et remplacement par lot confirmé.",
+      effective: "Date d'effet : 30 avril 2026"
+    },
+    policyItems: [
+      { index: "01", title: "Informations traitées", text: "L'app lit les dossiers importés ou autorisés via des préréglages et traite requêtes, options, résultats, aperçus de remplacement, exports et historique local." },
+      { index: "02", title: "Finalité", text: "Ces informations servent seulement à rechercher localement, afficher les résultats, copier ou exporter, préparer les remplacements, appliquer les changements confirmés et restaurer l'historique." },
+      { index: "03", title: "Réseau et tiers", text: "Les fonctions décrites ne nécessitent ni compte, ni index cloud, ni rendu distant, ni téléversement ; requêtes, chemins et contenu ne sont pas envoyés à un serveur." },
+      { index: "04", title: "Stockage local", text: "Dossiers importés, signets de sécurité, préréglages, historique et remplacements sont stockés dans les données de l'app sur ce Mac." },
+      { index: "05", title: "Vos contrôles", text: "Vous choisissez les dossiers à importer, pouvez retirer l'autorisation, effacer l'historique, désélectionner les remplacements et décider de copier ou exporter." },
+      { index: "06", title: "Mises à jour", text: "Si une future version ajoute synchronisation, comptes, analyse ou autres fonctions réseau, cette politique et les notes de version devront être mises à jour." }
+    ]
+  },
+  de: {
+    skipLink: "Zum Inhalt springen",
+    policy: {
+      heroLink: "Datenschutzrichtlinie lesen",
+      kicker: "Datenschutzrichtlinie",
+      title: "GrepFiles ist lokal ausgerichtet und verarbeitet Dateiinhalte nicht über die Cloud.",
+      lead: "Diese Richtlinie beschreibt das aktuelle Verhalten: lokale Suche, lokaler Verlauf, macOS-Sandbox-Zugriff, Sicherheitslesezeichen, Export und bestätigbare Stapelersetzung.",
+      effective: "Gültig ab: 30. April 2026"
+    },
+    policyItems: [
+      { index: "01", title: "Verarbeitete Informationen", text: "Die App liest importierte oder per Preset autorisierte Ordner und verarbeitet Abfragen, Optionen, Treffer, Ersetzungsvorschauen, Exporte und lokalen Verlauf." },
+      { index: "02", title: "Zweck", text: "Diese Informationen werden nur für lokale Suche, Ergebnisanzeige, Kopieren oder Export, Vorschauen, bestätigte Ersetzungen und Verlaufsschnappschüsse genutzt." },
+      { index: "03", title: "Netzwerk und Dritte", text: "Die beschriebenen Funktionen benötigen kein Konto, keinen Cloud-Index, kein Remote-Rendering und keine Uploads; Abfragen, Pfade und Inhalte werden nicht gesendet." },
+      { index: "04", title: "Lokale Speicherung", text: "Importierte Ordner, Sicherheitslesezeichen, Presets, Verlauf und Ersetzungsdaten werden in den App-Daten auf diesem Mac gespeichert." },
+      { index: "05", title: "Ihre Kontrolle", text: "Sie wählen Ordner, können Zugriffe entfernen, Verlauf löschen, Ersetzungen abwählen und entscheiden, ob Ergebnisse kopiert oder exportiert werden." },
+      { index: "06", title: "Aktualisierungen", text: "Wenn künftige Versionen Sync, Konten, Analyse oder andere Netzwerkfunktionen hinzufügen, sollten diese Richtlinie und die Versionshinweise aktualisiert werden." }
+    ]
+  },
+  it: {
+    skipLink: "Vai al contenuto",
+    policy: {
+      heroLink: "Leggi la privacy policy",
+      kicker: "Privacy policy",
+      title: "GrepFiles è progettato local-first e non usa il cloud per elaborare i contenuti dei file.",
+      lead: "Questa policy riflette il comportamento attuale: ricerca locale, cronologia locale, autorizzazione sandbox macOS, segnalibri sicuri, esportazione e sostituzione batch confermata.",
+      effective: "Data di efficacia: 30 aprile 2026"
+    },
+    policyItems: [
+      { index: "01", title: "Informazioni trattate", text: "L'app legge le cartelle importate o autorizzate tramite preset e tratta query, opzioni, risultati, anteprime, esportazioni e cronologia locale." },
+      { index: "02", title: "Finalità", text: "Queste informazioni servono solo per cercare localmente, mostrare risultati, copiare o esportare, preparare anteprime, applicare sostituzioni confermate e ripristinare cronologia." },
+      { index: "03", title: "Rete e terze parti", text: "Le funzioni descritte non richiedono account, indice cloud, rendering remoto o upload; query, percorsi e contenuti non vengono inviati a server." },
+      { index: "04", title: "Archiviazione locale", text: "Cartelle importate, segnalibri sicuri, preset, cronologia e record di sostituzione sono salvati nei dati dell'app su questo Mac." },
+      { index: "05", title: "I tuoi controlli", text: "Scegli quali cartelle importare, puoi rimuovere autorizzazioni, cancellare cronologia, deselezionare sostituzioni e decidere se copiare o esportare." },
+      { index: "06", title: "Aggiornamenti", text: "Se una versione futura aggiunge sync, account, analisi o altre funzioni di rete, questa policy e le note di rilascio dovranno essere aggiornate." }
+    ]
+  },
+  ja: {
+    skipLink: "本文へ移動",
+    policy: {
+      heroLink: "プライバシーポリシーを読む",
+      kicker: "プライバシーポリシー",
+      title: "GrepFiles はローカル優先で設計され、ファイル内容の処理にクラウドを必要としません。",
+      lead: "このポリシーは現在の機能に基づきます。ローカル検索、ローカル履歴、macOS サンドボックス許可、セキュリティブックマーク、エクスポート、確認可能な一括置換です。",
+      effective: "発効日：2026年4月30日"
+    },
+    policyItems: [
+      { index: "01", title: "処理する情報", text: "アプリは、読み込んだフォルダまたはプリセットで許可したフォルダを読み取り、クエリ、検索設定、一致結果、置換プレビュー、書き出し内容、ローカル履歴を処理します。" },
+      { index: "02", title: "利用目的", text: "これらはローカル検索、結果表示、コピーまたは書き出し、置換プレビュー、ユーザーが確認した置換、履歴スナップショットの復元にのみ使われます。" },
+      { index: "03", title: "ネットワークと第三者", text: "ここで説明する機能はアカウント、クラウド索引、リモート処理、ファイルアップロードを必要とせず、クエリ、パス、内容をサーバーに送信しません。" },
+      { index: "04", title: "ローカル保存", text: "読み込んだフォルダ、セキュリティブックマーク、プリセット、最近の履歴、置換記録はこの Mac のアプリデータに保存されます。" },
+      { index: "05", title: "ユーザーの管理", text: "読み込むフォルダを選び、許可の削除、履歴の消去、置換候補の解除、結果のコピーまたは書き出しを選択できます。" },
+      { index: "06", title: "更新", text: "将来のバージョンで同期、アカウント、分析、その他のネットワーク機能が追加される場合、このポリシーとリリースノートを更新する必要があります。" }
+    ]
+  },
+  ru: {
+    skipLink: "Перейти к содержимому",
+    policy: {
+      heroLink: "Прочитать политику приватности",
+      kicker: "Политика приватности",
+      title: "GrepFiles спроектирован как локальный инструмент и не использует облако для обработки содержимого файлов.",
+      lead: "Эта политика отражает текущее поведение: локальный поиск, локальная история, разрешения песочницы macOS, безопасные закладки, экспорт и подтверждаемая массовая замена.",
+      effective: "Дата вступления в силу: 30 апреля 2026 г."
+    },
+    policyItems: [
+      { index: "01", title: "Обрабатываемые данные", text: "Приложение читает папки, которые вы импортируете или разрешаете через пресеты, и обрабатывает запросы, параметры, совпадения, предпросмотры замен, экспорт и локальную историю." },
+      { index: "02", title: "Цель использования", text: "Эти данные используются только для локального поиска, показа результатов, копирования или экспорта, подготовки замен, применения подтверждённых замен и восстановления снимков истории." },
+      { index: "03", title: "Сеть и третьи стороны", text: "Описанные функции не требуют аккаунта, облачного индекса, удалённого рендеринга или загрузки файлов; запросы, пути и содержимое не отправляются на сервер." },
+      { index: "04", title: "Локальное хранение", text: "Импортированные папки, безопасные закладки, пресеты, история и записи замен хранятся в данных приложения на этом Mac." },
+      { index: "05", title: "Ваш контроль", text: "Вы выбираете папки, можете удалить разрешения, очистить историю, снять кандидаты замены и решить, копировать или экспортировать результаты." },
+      { index: "06", title: "Обновления политики", text: "Если будущая версия добавит синхронизацию, аккаунты, аналитику или другие сетевые функции, эту политику и примечания к выпуску следует обновить." }
+    ]
+  }
+};
+
+Object.entries(sharedPolicyTranslations).forEach(([language, patch]) => {
+  translations[language] = {
+    ...translations[language],
+    ...patch
+  };
+});
+
 const aliases = {
   "zh-cn": "zh-Hans",
   "zh-sg": "zh-Hans",
