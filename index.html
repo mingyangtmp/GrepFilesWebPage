@@ -23,6 +23,7 @@
       <span>FindText</span>
     </a>
     <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#guided-search">Question Mode</a>
       <a href="#features">Features</a>
       <a href="#screenshots">Screenshots</a>
       <a href="#privacy">Privacy</a>
@@ -77,28 +78,62 @@
       </div>
     </section>
 
-    <section class="section question-section" aria-labelledby="question-title">
+    <section id="guided-search" class="section question-section" aria-labelledby="question-title">
       <div class="question-copy">
         <p class="eyebrow">Question Mode</p>
-        <h2 id="question-title">Search by answering simple questions. No regex required.</h2>
-        <p>FindText is not only for people who already know grep or regular expressions. Question Mode helps you describe what you want to find, choose where to search, and decide how results should be shown with plain prompts.</p>
+        <h2 id="question-title">A guided rule builder for people who do not think in regex.</h2>
+        <p>Question Mode is not a chatbot and it does not upload files. It turns a few clear answers into a deterministic local search: what kind of lines to include, which text traits they must contain, where those traits appear, and how the results should be scoped and displayed.</p>
       </div>
       <div class="question-flow" aria-label="Question Mode benefits">
         <article>
           <span>01</span>
-          <h3>Describe the target</h3>
-          <p>Use normal wording like a project name, customer term, error phrase, heading, or note you remember.</p>
+          <h3>Choose the intent</h3>
+          <p>Start with matching or not matching lines, so inverse searches are available without memorizing command-line flags.</p>
         </article>
         <article>
           <span>02</span>
-          <h3>Answer what matters</h3>
-          <p>Choose folders, file types, case sensitivity, whole-word matching, and result style without learning regex syntax.</p>
+          <h3>Describe the text</h3>
+          <p>Add words or phrases that must appear, phrases that must be excluded, and whether multiple traits are all required, any one, or in order.</p>
         </article>
         <article>
           <span>03</span>
-          <h3>Grow into power tools</h3>
-          <p>Developers can still switch to regex, presets, filters, export, and replacement preview when the task needs precision.</p>
+          <h3>Add structure</h3>
+          <p>Refine starts, endings, indentation, and common structures such as dates, emails, IP addresses, TODOs, or error terms.</p>
         </article>
+        <article>
+          <span>04</span>
+          <h3>Review before search</h3>
+          <p>Confirm the generated criteria, scope, file types, skipped folders, case behavior, and output format before running the search.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section guided-section" aria-labelledby="guided-title">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">How it works</p>
+          <h2 id="guided-title">Six focused questions become one precise search.</h2>
+        </div>
+        <p>The flow keeps the mental model visible: every answer becomes a search constraint, and the final report shows the assembled rule before FindText scans your local folders.</p>
+      </div>
+
+      <div class="guided-showcase" data-guided-gallery>
+        <div class="guided-copy">
+          <div class="guided-tabs" role="tablist" aria-label="Question Mode steps">
+            <button class="guided-tab is-active" type="button" role="tab" aria-selected="true" data-guided-shot="goal">Goal</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="traits">Traits</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="boundaries">Boundaries</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="structures">Structures</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="options">Options</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="report">Report</button>
+          </div>
+          <p class="guided-step" data-guided-step>Step 1 of 6</p>
+          <h3 data-guided-title>Choose whether the search should include or exclude matching lines.</h3>
+          <p data-guided-text>The first decision maps to positive or inverse search. Users can ask for lines matching described traits, or lines that do not match those traits, without needing grep flags or regex syntax.</p>
+        </div>
+        <figure class="guided-figure">
+          <img data-guided-image src="assets/screenshots/search_goal.png" alt="FindText Question Mode search goal step" width="2800" height="1802">
+        </figure>
       </div>
     </section>
 
@@ -176,16 +211,16 @@
       <div class="screen-showcase" data-gallery>
         <div class="gallery-copy">
           <div class="gallery-tabs" role="tablist" aria-label="Screenshot gallery">
-            <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-shot="plain">Question Mode</button>
+            <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-shot="plain">Plain Search</button>
             <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="regex">Regex Preset</button>
             <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="replace">Replace Preview</button>
             <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="history">History</button>
           </div>
-          <h3 data-gallery-title>Question Mode for search without regex.</h3>
-          <p data-gallery-text>Answer simple prompts, choose the folders and file types that matter, and review highlighted results without writing a regular expression.</p>
+          <h3 data-gallery-title>Plain text search for direct lookups.</h3>
+          <p data-gallery-text>Type a word, phrase, identifier, or error message, then review grouped matching lines with highlights and file context.</p>
         </div>
         <figure class="gallery-figure">
-          <img data-gallery-image src="assets/screenshots/question-mode.png" alt="FindText Guided Search question flow with a required text answer" width="2400" height="900">
+          <img data-gallery-image src="assets/screenshots/plain-search.png" alt="FindText plain text search results with highlighted matches" width="2400" height="1484">
         </figure>
       </div>
     </section>
