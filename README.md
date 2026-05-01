@@ -1,5 +1,5 @@
-# GrepFiles WebPage
+# FindText WebPage
 
-GrepFiles 的静态产品展示页，已配置为可直接通过 GitHub Pages 从仓库根目录发布。
+Static English-first marketing page for FindText, published directly from the repository root with GitHub Pages.
 
-本页基于本地 `picture/` 中的应用截图设计，并使用 `assets/screenshots/` 中的优化图片作为网页发布素材，同时补充了来自 GrepFiles macOS 项目帮助文档的功能文案。
+The page uses real screenshots captured from a synthetic English demo workspace at `/Users/Shared/FindTextDemo`, including a Guided Search question-flow screenshot. It is positioned for both everyday Mac users who need Question Mode and plain-language search for notes and documents, and technical users who search code, logs, configs, and reports with regex or advanced filters.
