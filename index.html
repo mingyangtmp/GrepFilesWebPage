@@ -10,100 +10,126 @@
   <meta property="og:description" content="Search across local files, review exact matches, preview replacements, and keep every query on your Mac.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/screenshots/question-mode.png">
+  <link rel="alternate" hreflang="zh-Hans" href="?lang=zh-Hans">
+  <link rel="alternate" hreflang="zh-Hant" href="?lang=zh-Hant">
+  <link rel="alternate" hreflang="en" href="?lang=en">
+  <link rel="alternate" hreflang="de" href="?lang=de">
+  <link rel="alternate" hreflang="es" href="?lang=es">
+  <link rel="alternate" hreflang="fr" href="?lang=fr">
+  <link rel="alternate" hreflang="it" href="?lang=it">
+  <link rel="alternate" hreflang="ja" href="?lang=ja">
+  <link rel="alternate" hreflang="ru" href="?lang=ru">
+  <link rel="alternate" hreflang="x-default" href="?lang=en">
   <link rel="icon" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
 
-  <header class="site-header" aria-label="Site navigation">
-    <a class="brand" href="#top" aria-label="FindText home">
+  <header class="site-header" aria-label="Site navigation" data-i18n-aria="header.aria">
+    <a class="brand" href="#top" aria-label="FindText home" data-i18n-aria="header.brandAria">
       <img src="assets/icon.png" alt="" width="42" height="42">
       <span>FindText</span>
     </a>
-    <nav class="nav-links" aria-label="Primary navigation">
-      <a href="#guided-search">Question Mode</a>
-      <a href="#features">Features</a>
-      <a href="#screenshots">Screenshots</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#pricing">Pricing</a>
+    <nav class="nav-links" aria-label="Primary navigation" data-i18n-aria="header.navAria">
+      <a href="#guided-search" data-i18n="header.nav.guided">Question Mode</a>
+      <a href="#features" data-i18n="header.nav.features">Features</a>
+      <a href="#screenshots" data-i18n="header.nav.screenshots">Screenshots</a>
+      <a href="#privacy" data-i18n="header.nav.privacy">Privacy</a>
+      <a href="#pricing" data-i18n="header.nav.pricing">Pricing</a>
     </nav>
-    <a class="button button-store app-store-link" href="https://apps.apple.com/app/id0000000000">Download</a>
+    <div class="header-actions">
+      <label class="language-picker" for="language-select">
+        <span data-i18n="language.label">Language</span>
+        <select id="language-select" aria-label="Language" data-i18n-aria="language.aria">
+          <option value="zh-Hans">简体中文</option>
+          <option value="zh-Hant">繁體中文</option>
+          <option value="en" selected>English</option>
+          <option value="de">Deutsch</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="it">Italiano</option>
+          <option value="ja">日本語</option>
+          <option value="ru">Русский</option>
+        </select>
+      </label>
+      <a class="button button-store app-store-link" href="https://apps.apple.com/app/id0000000000" data-i18n="header.download">Download</a>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
-      <figure class="hero-media" aria-label="FindText search interface">
-        <img src="assets/screenshots/question-mode.png" alt="FindText Guided Search asking questions for a local file search">
+      <figure class="hero-media" aria-label="FindText search interface" data-i18n-aria="hero.figureAria">
+        <img src="assets/screenshots/question-mode.png" alt="FindText Guided Search asking questions for a local file search" data-i18n-alt="hero.imageAlt">
       </figure>
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-content">
-        <p class="eyebrow">Local-first search for macOS</p>
-        <h1 id="hero-title">Find what matters across every local file.</h1>
-        <p class="hero-lead">FindText gives everyday file search a calm Mac interface: use Question Mode when you do not know regex, or switch to precise controls for notes, Markdown, reports, configs, logs, and code.</p>
-        <div class="hero-actions" aria-label="Primary actions">
-          <a class="button button-store app-store-link" href="https://apps.apple.com/app/id0000000000">Download on the Mac App Store</a>
-          <a class="button button-ghost" href="#screenshots">View product shots</a>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Local-first search for macOS</p>
+        <h1 id="hero-title" data-i18n="hero.title">Find what matters across every local file.</h1>
+        <p class="hero-lead" data-i18n="hero.lead">FindText gives everyday file search a calm Mac interface: use Question Mode when you do not know regex, or switch to precise controls for notes, Markdown, reports, configs, logs, and code.</p>
+        <div class="hero-actions" aria-label="Primary actions" data-i18n-aria="hero.actionsAria">
+          <a class="button button-store app-store-link" href="https://apps.apple.com/app/id0000000000" data-i18n="hero.primaryAction">Download on the Mac App Store</a>
+          <a class="button button-ghost" href="#screenshots" data-i18n="hero.secondaryAction">View product shots</a>
         </div>
-        <dl class="hero-facts" aria-label="Product facts">
+        <dl class="hero-facts" aria-label="Product facts" data-i18n-aria="hero.factsAria">
           <div>
-            <dt>Trial</dt>
-            <dd>7 days free</dd>
+            <dt data-i18n="hero.fact1Label">Trial</dt>
+            <dd data-i18n="hero.fact1Value">7 days free</dd>
           </div>
           <div>
-            <dt>Unlock</dt>
-            <dd>US$2.99 once</dd>
+            <dt data-i18n="hero.fact2Label">Unlock</dt>
+            <dd data-i18n="hero.fact2Value">US$2.99 once</dd>
           </div>
           <div>
-            <dt>Privacy</dt>
-            <dd>Files stay local</dd>
+            <dt data-i18n="hero.fact3Label">Privacy</dt>
+            <dd data-i18n="hero.fact3Value">Files stay local</dd>
           </div>
         </dl>
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Core workflow">
+    <section class="proof-strip" aria-label="Core workflow" data-i18n-aria="proof.aria">
       <div>
-        <span>Ask</span>
-        <p>Question Mode walks you through a search in plain language, so you can find text without writing a regular expression.</p>
+        <span data-i18n="proof.askLabel">Ask</span>
+        <p data-i18n="proof.askText">Question Mode walks you through a search in plain language, so you can find text without writing a regular expression.</p>
       </div>
       <div>
-        <span>Review</span>
-        <p>Grouped results with file names, line numbers, highlights, history, and exportable reports.</p>
+        <span data-i18n="proof.reviewLabel">Review</span>
+        <p data-i18n="proof.reviewText">Grouped results with file names, line numbers, highlights, history, and exportable reports.</p>
       </div>
       <div>
-        <span>Replace</span>
-        <p>Selectable previews for careful bulk edits, with file-change checks and a session undo snapshot.</p>
+        <span data-i18n="proof.replaceLabel">Replace</span>
+        <p data-i18n="proof.replaceText">Selectable previews for careful bulk edits, with file-change checks and a session undo snapshot.</p>
       </div>
     </section>
 
     <section id="guided-search" class="section question-section" aria-labelledby="question-title">
       <div class="question-copy">
-        <p class="eyebrow">Question Mode</p>
-        <h2 id="question-title">A guided rule builder for people who do not think in regex.</h2>
-        <p>Question Mode is not a chatbot and it does not upload files. It turns a few clear answers into a deterministic local search: what kind of lines to include, which text traits they must contain, where those traits appear, and how the results should be scoped and displayed.</p>
+        <p class="eyebrow" data-i18n="question.eyebrow">Question Mode</p>
+        <h2 id="question-title" data-i18n="question.title">A guided rule builder for people who do not think in regex.</h2>
+        <p data-i18n="question.text">Question Mode is not a chatbot and it does not upload files. It turns a few clear answers into a deterministic local search: what kind of lines to include, which text traits they must contain, where those traits appear, and how the results should be scoped and displayed.</p>
       </div>
-      <div class="question-flow" aria-label="Question Mode benefits">
+      <div class="question-flow" aria-label="Question Mode benefits" data-i18n-aria="question.flowAria">
         <article>
-          <span>01</span>
-          <h3>Choose the intent</h3>
-          <p>Start with matching or not matching lines, so inverse searches are available without memorizing command-line flags.</p>
+          <span data-i18n="question.cards.0.index">01</span>
+          <h3 data-i18n="question.cards.0.title">Choose the intent</h3>
+          <p data-i18n="question.cards.0.text">Start with matching or not matching lines, so inverse searches are available without memorizing command-line flags.</p>
         </article>
         <article>
-          <span>02</span>
-          <h3>Describe the text</h3>
-          <p>Add words or phrases that must appear, phrases that must be excluded, and whether multiple traits are all required, any one, or in order.</p>
+          <span data-i18n="question.cards.1.index">02</span>
+          <h3 data-i18n="question.cards.1.title">Describe the text</h3>
+          <p data-i18n="question.cards.1.text">Add words or phrases that must appear, phrases that must be excluded, and whether multiple traits are all required, any one, or in order.</p>
         </article>
         <article>
-          <span>03</span>
-          <h3>Add structure</h3>
-          <p>Refine starts, endings, indentation, and common structures such as dates, emails, IP addresses, TODOs, or error terms.</p>
+          <span data-i18n="question.cards.2.index">03</span>
+          <h3 data-i18n="question.cards.2.title">Add structure</h3>
+          <p data-i18n="question.cards.2.text">Refine starts, endings, indentation, and common structures such as dates, emails, IP addresses, TODOs, or error terms.</p>
         </article>
         <article>
-          <span>04</span>
-          <h3>Review before search</h3>
-          <p>Confirm the generated criteria, scope, file types, skipped folders, case behavior, and output format before running the search.</p>
+          <span data-i18n="question.cards.3.index">04</span>
+          <h3 data-i18n="question.cards.3.title">Review before search</h3>
+          <p data-i18n="question.cards.3.text">Confirm the generated criteria, scope, file types, skipped folders, case behavior, and output format before running the search.</p>
         </article>
       </div>
     </section>
@@ -111,21 +137,21 @@
     <section class="section guided-section" aria-labelledby="guided-title">
       <div class="section-heading split-heading">
         <div>
-          <p class="eyebrow">How it works</p>
-          <h2 id="guided-title">Six focused questions become one precise search.</h2>
+          <p class="eyebrow" data-i18n="guidedIntro.eyebrow">How it works</p>
+          <h2 id="guided-title" data-i18n="guidedIntro.title">Six focused questions become one precise search.</h2>
         </div>
-        <p>The flow keeps the mental model visible: every answer becomes a search constraint, and the final report shows the assembled rule before FindText scans your local folders.</p>
+        <p data-i18n="guidedIntro.text">The flow keeps the mental model visible: every answer becomes a search constraint, and the final report shows the assembled rule before FindText scans your local folders.</p>
       </div>
 
       <div class="guided-showcase" data-guided-gallery>
         <div class="guided-copy">
-          <div class="guided-tabs" role="tablist" aria-label="Question Mode steps">
-            <button class="guided-tab is-active" type="button" role="tab" aria-selected="true" data-guided-shot="goal">Goal</button>
-            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="traits">Traits</button>
-            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="boundaries">Boundaries</button>
-            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="structures">Structures</button>
-            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="options">Options</button>
-            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="report">Report</button>
+          <div class="guided-tabs" role="tablist" aria-label="Question Mode steps" data-i18n-aria="guidedIntro.tabsAria">
+            <button class="guided-tab is-active" type="button" role="tab" aria-selected="true" data-guided-shot="goal" data-i18n="guided.goal.label">Goal</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="traits" data-i18n="guided.traits.label">Traits</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="boundaries" data-i18n="guided.boundaries.label">Boundaries</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="structures" data-i18n="guided.structures.label">Structures</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="options" data-i18n="guided.options.label">Options</button>
+            <button class="guided-tab" type="button" role="tab" aria-selected="false" data-guided-shot="report" data-i18n="guided.report.label">Report</button>
           </div>
           <p class="guided-step" data-guided-step>Step 1 of 6</p>
           <h3 data-guided-title>Choose whether the search should include or exclude matching lines.</h3>
@@ -139,62 +165,62 @@
 
     <section id="features" class="section feature-section" aria-labelledby="features-title">
       <div class="section-heading">
-        <p class="eyebrow">Built for repeated work</p>
-        <h2 id="features-title">Simple enough for documents. Precise enough for code.</h2>
-        <p>FindText helps ordinary Mac users search through questions and plain text, while giving developers, writers, QA teams, and support engineers the deeper controls they expect.</p>
+        <p class="eyebrow" data-i18n="features.eyebrow">Built for repeated work</p>
+        <h2 id="features-title" data-i18n="features.title">Simple enough for documents. Precise enough for code.</h2>
+        <p data-i18n="features.text">FindText helps ordinary Mac users search through questions and plain text, while giving developers, writers, QA teams, and support engineers the deeper controls they expect.</p>
       </div>
       <div class="feature-grid">
         <article class="feature-card">
-          <span>01</span>
-          <h3>Friendly guided search</h3>
-          <p>Use Question Mode when you know what you want to find but do not know how to express it as a regular expression.</p>
+          <span data-i18n="features.cards.0.index">01</span>
+          <h3 data-i18n="features.cards.0.title">Friendly guided search</h3>
+          <p data-i18n="features.cards.0.text">Use Question Mode when you know what you want to find but do not know how to express it as a regular expression.</p>
         </article>
         <article class="feature-card">
-          <span>02</span>
-          <h3>Readable result sets</h3>
-          <p>See matches grouped by file with line numbers and highlights, then collapse noisy groups when a large folder turns up hundreds of hits.</p>
+          <span data-i18n="features.cards.1.index">02</span>
+          <h3 data-i18n="features.cards.1.title">Readable result sets</h3>
+          <p data-i18n="features.cards.1.text">See matches grouped by file with line numbers and highlights, then collapse noisy groups when a large folder turns up hundreds of hits.</p>
         </article>
         <article class="feature-card">
-          <span>03</span>
-          <h3>Reusable search memory</h3>
-          <p>Save recurring searches for monthly documents, project folders, support cases, or code audits, and reopen history snapshots without running the search again.</p>
+          <span data-i18n="features.cards.2.index">03</span>
+          <h3 data-i18n="features.cards.2.title">Reusable search memory</h3>
+          <p data-i18n="features.cards.2.text">Save recurring searches for monthly documents, project folders, support cases, or code audits, and reopen history snapshots without running the search again.</p>
         </article>
         <article class="feature-card">
-          <span>04</span>
-          <h3>Safer batch replacement</h3>
-          <p>Preview every candidate by file and occurrence, select only what should change, and avoid accidental edits when renaming terms across many files.</p>
+          <span data-i18n="features.cards.3.index">04</span>
+          <h3 data-i18n="features.cards.3.title">Safer batch replacement</h3>
+          <p data-i18n="features.cards.3.text">Preview every candidate by file and occurrence, select only what should change, and avoid accidental edits when renaming terms across many files.</p>
         </article>
         <article class="feature-card">
-          <span>05</span>
-          <h3>Reports that travel</h3>
-          <p>Copy matching text, whole lines, or file locations with line numbers, then export a report for a teammate, customer, or future self.</p>
+          <span data-i18n="features.cards.4.index">05</span>
+          <h3 data-i18n="features.cards.4.title">Reports that travel</h3>
+          <p data-i18n="features.cards.4.text">Copy matching text, whole lines, or file locations with line numbers, then export a report for a teammate, customer, or future self.</p>
         </article>
         <article class="feature-card">
-          <span>06</span>
-          <h3>Scope that stays clean</h3>
-          <p>Search one or many folders, include only selected file types, skip cluttered directories, and search extracted .docx text when macOS can read it.</p>
+          <span data-i18n="features.cards.5.index">06</span>
+          <h3 data-i18n="features.cards.5.title">Scope that stays clean</h3>
+          <p data-i18n="features.cards.5.text">Search one or many folders, include only selected file types, skip cluttered directories, and search extracted .docx text when macOS can read it.</p>
         </article>
       </div>
     </section>
 
     <section class="section operator-section" aria-labelledby="operator-title">
       <div class="operator-copy">
-        <p class="eyebrow">Less context switching</p>
-        <h2 id="operator-title">Built for the moment when a quick search becomes real work.</h2>
-        <p>FindText works for simple "where did I write that?" searches and for deeper inspections that need proof. It is especially useful when a quick lookup turns into a document cleanup, change list, release check, support investigation, or code review.</p>
+        <p class="eyebrow" data-i18n="operator.eyebrow">Less context switching</p>
+        <h2 id="operator-title" data-i18n="operator.title">Built for the moment when a quick search becomes real work.</h2>
+        <p data-i18n="operator.text">FindText works for simple "where did I write that?" searches and for deeper inspections that need proof. It is especially useful when a quick lookup turns into a document cleanup, change list, release check, support investigation, or code review.</p>
       </div>
-      <div class="operator-metrics" aria-label="FindText strengths">
+      <div class="operator-metrics" aria-label="FindText strengths" data-i18n-aria="operator.aria">
         <div>
-          <strong>Local</strong>
-          <span>No account, cloud index, or remote file upload for search.</span>
+          <strong data-i18n="operator.metrics.0.title">Local</strong>
+          <span data-i18n="operator.metrics.0.text">No account, cloud index, or remote file upload for search.</span>
         </div>
         <div>
-          <strong>Auditable</strong>
-          <span>History snapshots capture the query, scope, and results.</span>
+          <strong data-i18n="operator.metrics.1.title">Auditable</strong>
+          <span data-i18n="operator.metrics.1.text">History snapshots capture the query, scope, and results.</span>
         </div>
         <div>
-          <strong>Controlled</strong>
-          <span>Replacement previews are selectable before write.</span>
+          <strong data-i18n="operator.metrics.2.title">Controlled</strong>
+          <span data-i18n="operator.metrics.2.text">Replacement previews are selectable before write.</span>
         </div>
       </div>
     </section>
@@ -202,19 +228,20 @@
     <section id="screenshots" class="section screens-section" aria-labelledby="screenshots-title">
       <div class="section-heading split-heading">
         <div>
-          <p class="eyebrow">Product screenshots</p>
-          <h2 id="screenshots-title">A Mac-native workspace for search, review, and replacement.</h2>
+          <p class="eyebrow" data-i18n="screenshots.eyebrow">Product screenshots</p>
+          <h2 id="screenshots-title" data-i18n="screenshots.title">A Mac-native workspace for search, review, and replacement.</h2>
         </div>
-          <p>These views are captured from an English demo workspace with synthetic notes, docs, configs, logs, and code. Question Mode is designed for users who do not know regular expressions; regex remains available for advanced searches.</p>
+        <p data-i18n="screenshots.text">These views are captured from an English demo workspace with synthetic notes, docs, configs, logs, and code. Question Mode is designed for users who do not know regular expressions; regex remains available for advanced searches.</p>
       </div>
 
       <div class="screen-showcase" data-gallery>
         <div class="gallery-copy">
-          <div class="gallery-tabs" role="tablist" aria-label="Screenshot gallery">
-            <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-shot="plain">Plain Search</button>
-            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="regex">Regex Preset</button>
-            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="replace">Replace Preview</button>
-            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="history">History</button>
+          <div class="gallery-tabs" role="tablist" aria-label="Screenshot gallery" data-i18n-aria="gallery.aria">
+            <button class="gallery-tab is-active" type="button" role="tab" aria-selected="true" data-shot="plain" data-i18n="gallery.plain.label">Plain Search</button>
+            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="regex" data-i18n="gallery.regex.label">Regex Preset</button>
+            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="export" data-i18n="gallery.export.label">Export Results</button>
+            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="replace" data-i18n="gallery.replace.label">Replace Preview</button>
+            <button class="gallery-tab" type="button" role="tab" aria-selected="false" data-shot="history" data-i18n="gallery.history.label">History</button>
           </div>
           <h3 data-gallery-title>Plain text search for direct lookups.</h3>
           <p data-gallery-text>Type a word, phrase, identifier, or error message, then review grouped matching lines with highlights and file context.</p>
@@ -227,74 +254,74 @@
 
     <section id="privacy" class="section privacy-section" aria-labelledby="privacy-title">
       <div class="privacy-copy">
-        <p class="eyebrow">Privacy and safety</p>
-        <h2 id="privacy-title">Your files are processed on your Mac.</h2>
-        <p>FindText is local-first by design. The current app behavior does not collect data, track users, create cloud indexes, or upload file content. Folder access is granted through the macOS sandbox and stored as security-scoped bookmarks.</p>
+        <p class="eyebrow" data-i18n="privacy.eyebrow">Privacy and safety</p>
+        <h2 id="privacy-title" data-i18n="privacy.title">Your files are processed on your Mac.</h2>
+        <p data-i18n="privacy.text">FindText is local-first by design. The current app behavior does not collect data, track users, create cloud indexes, or upload file content. Folder access is granted through the macOS sandbox and stored as security-scoped bookmarks.</p>
       </div>
       <div class="safety-grid">
         <article>
-          <h3>No collected data</h3>
-          <p>The app privacy manifest declares no collected data and no tracking domains.</p>
+          <h3 data-i18n="privacy.cards.0.title">No collected data</h3>
+          <p data-i18n="privacy.cards.0.text">The app privacy manifest declares no collected data and no tracking domains.</p>
         </article>
         <article>
-          <h3>Preview before write</h3>
-          <p>Batch replacement requires a preview, supports per-file and per-occurrence selection, and checks original text before applying changes.</p>
+          <h3 data-i18n="privacy.cards.1.title">Preview before write</h3>
+          <p data-i18n="privacy.cards.1.text">Batch replacement requires a preview, supports per-file and per-occurrence selection, and checks original text before applying changes.</p>
         </article>
         <article>
-          <h3>Local state, local control</h3>
-          <p>Imported folders, bookmarks, presets, history, and replacement records stay in this Mac's app data and can be removed by the user.</p>
+          <h3 data-i18n="privacy.cards.2.title">Local state, local control</h3>
+          <p data-i18n="privacy.cards.2.text">Imported folders, bookmarks, presets, history, and replacement records stay in this Mac's app data and can be removed by the user.</p>
         </article>
       </div>
     </section>
 
     <section id="pricing" class="section pricing-section" aria-labelledby="pricing-title">
       <div class="pricing-copy">
-        <p class="eyebrow">Simple pricing</p>
-        <h2 id="pricing-title">Try it for a week. Unlock it once.</h2>
-        <p>FindText is meant to become a daily utility, not a subscription you have to justify every month.</p>
+        <p class="eyebrow" data-i18n="pricing.eyebrow">Simple pricing</p>
+        <h2 id="pricing-title" data-i18n="pricing.title">Try it for a week. Unlock it once.</h2>
+        <p data-i18n="pricing.text">FindText is meant to become a daily utility, not a subscription you have to justify every month.</p>
       </div>
       <div class="pricing-panel">
         <div>
-          <span class="price-label">Full unlock</span>
-          <strong>US$2.99</strong>
-          <p>One-time purchase after the 7-day free trial.</p>
+          <span class="price-label" data-i18n="pricing.label">Full unlock</span>
+          <strong data-i18n="pricing.price">US$2.99</strong>
+          <p data-i18n="pricing.panelText">One-time purchase after the 7-day free trial.</p>
         </div>
         <ul>
-          <li>Local multi-folder search for notes, documents, logs, and code</li>
-          <li>Question Mode for users who do not know regex</li>
-          <li>Plain text for normal searches, regex and presets for advanced ones</li>
-          <li>Selectable replacement previews and session undo</li>
-          <li>History snapshots, copy actions, and report export</li>
+          <li data-i18n="pricing.bullets.0">Local multi-folder search for notes, documents, logs, and code</li>
+          <li data-i18n="pricing.bullets.1">Question Mode for users who do not know regex</li>
+          <li data-i18n="pricing.bullets.2">Plain text for normal searches, regex and presets for advanced ones</li>
+          <li data-i18n="pricing.bullets.3">Selectable replacement previews and session undo</li>
+          <li data-i18n="pricing.bullets.4">History snapshots, copy actions, and report export</li>
         </ul>
-        <a class="button button-store wide app-store-link" href="https://apps.apple.com/app/id0000000000">Start your 7-day free trial</a>
+        <a class="button button-store wide app-store-link" href="https://apps.apple.com/app/id0000000000" data-i18n="pricing.button">Start your 7-day free trial</a>
       </div>
     </section>
 
     <section class="section faq-section" aria-labelledby="faq-title">
       <div class="section-heading">
-        <p class="eyebrow">FAQ</p>
-        <h2 id="faq-title">A few details before you install.</h2>
+        <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+        <h2 id="faq-title" data-i18n="faq.title">A few details before you install.</h2>
       </div>
       <div class="faq-list">
         <details>
-          <summary>Does FindText upload my files?</summary>
-          <p>No. Search runs locally on your Mac. Queries, file paths, and file content are not sent to a server by the current app features described here.</p>
+          <summary data-i18n="faq.items.0.question">Does FindText upload my files?</summary>
+          <p data-i18n="faq.items.0.answer">No. Search runs locally on your Mac. Queries, file paths, and file content are not sent to a server by the current app features described here.</p>
         </details>
         <details>
-          <summary>Can I replace text in multiple files?</summary>
-          <p>Yes. Run a search first, prepare a replacement preview, choose the files or occurrences to change, and confirm before anything is written.</p>
+          <summary data-i18n="faq.items.1.question">Can I replace text in multiple files?</summary>
+          <p data-i18n="faq.items.1.answer">Yes. Run a search first, prepare a replacement preview, choose the files or occurrences to change, and confirm before anything is written.</p>
         </details>
         <details>
-          <summary>Do I need to know regular expressions?</summary>
-          <p>No. Question Mode is built for users who do not know regex. It guides the search with plain prompts, while regex and presets remain available when you want advanced pattern matching.</p>
+          <summary data-i18n="faq.items.2.question">Do I need to know regular expressions?</summary>
+          <p data-i18n="faq.items.2.answer">No. Question Mode is built for users who do not know regex. It guides the search with plain prompts, while regex and presets remain available when you want advanced pattern matching.</p>
         </details>
         <details>
-          <summary>Which export formats are supported?</summary>
-          <p>Search results can be exported as Markdown, CSV, JSON, or plain text. You can also copy matching text, whole lines, or file paths with line numbers.</p>
+          <summary data-i18n="faq.items.3.question">Which export formats are supported?</summary>
+          <p data-i18n="faq.items.3.answer">Search results can be exported as Markdown, CSV, JSON, or plain text. You can also copy matching text, whole lines, or file paths with line numbers.</p>
         </details>
         <details>
-          <summary>Can I limit a search to certain file types?</summary>
-          <p>Yes. Add included extensions such as .md, .txt, .log, .swift, or .docx. If the list is empty, FindText searches readable text files that are not skipped by your rules.</p>
+          <summary data-i18n="faq.items.4.question">Can I limit a search to certain file types?</summary>
+          <p data-i18n="faq.items.4.answer">Yes. Add included extensions such as .md, .txt, .log, .swift, or .docx. If the list is empty, FindText searches readable text files that are not skipped by your rules.</p>
         </details>
       </div>
     </section>
@@ -303,9 +330,9 @@
   <footer class="site-footer">
     <div>
       <strong>FindText</strong>
-      <p>Local file search and safe replacement for macOS.</p>
+      <p data-i18n="footer.text">Local file search and safe replacement for macOS.</p>
     </div>
-    <a href="#top">Back to top</a>
+    <a href="#top" data-i18n="footer.back">Back to top</a>
   </footer>
 
   <script src="script.js"></script>

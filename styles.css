@@ -137,6 +137,37 @@ button:focus-visible {
   color: var(--ink);
 }
 
+.header-actions {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: max-content;
+}
+
+.language-picker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.45rem 0.35rem 0.65rem;
+  color: var(--ink-muted);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(22, 27, 31, 0.1);
+  border-radius: var(--radius);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.language-picker select {
+  min-width: 8.3rem;
+  max-width: 10rem;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  font-weight: 800;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -778,6 +809,10 @@ p {
     grid-template-columns: auto auto;
   }
 
+  .header-actions {
+    grid-column: 2;
+  }
+
   .nav-links {
     order: 3;
     grid-column: 1 / -1;
@@ -842,12 +877,24 @@ p {
   }
 
   .brand,
-  .site-header > .button {
+  .header-actions {
     justify-self: stretch;
+  }
+
+  .header-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 0;
   }
 
   .brand {
     justify-content: center;
+  }
+
+  .language-picker,
+  .language-picker select {
+    width: 100%;
+    max-width: none;
   }
 
   .nav-links {
