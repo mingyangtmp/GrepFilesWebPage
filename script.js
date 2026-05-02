@@ -49,8 +49,8 @@ const translations = {
       primaryAction: "在 Mac App Store 下载",
       secondaryAction: "查看产品截图",
       factsAria: "产品信息",
-      fact1Label: "试用",
-      fact1Value: "免费 7 天",
+      fact1Label: "模式",
+      fact1Value: "问答搜索",
       fact2Label: "解锁",
       fact2Value: "一次购买 US$2.99",
       fact3Label: "隐私",
@@ -140,11 +140,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "简单定价",
-      title: "免费试用一周，一次购买解锁。",
+      title: "一次购买，完整解锁。",
       text: "FindText 旨在成为日常工具，而不是每个月都需要重新权衡的订阅。",
       label: "完整解锁",
       price: "US$2.99",
-      panelText: "7 天免费试用后一次性购买。",
+      panelText: "一次性购买即可完整解锁。",
       bullets: [
         "为笔记、文档、日志和代码提供本地多文件夹搜索",
         "为不熟悉正则的用户提供问答模式",
@@ -152,7 +152,7 @@ const translations = {
         "可选择的替换预览和会话撤销",
         "历史快照、复制操作和报告导出"
       ],
-      button: "开始 7 天免费试用"
+      button: "在 Mac App Store 查看"
     },
     faq: {
       eyebrow: "常见问题",
@@ -193,8 +193,8 @@ const translations = {
       primaryAction: "在 Mac App Store 下載",
       secondaryAction: "查看產品截圖",
       factsAria: "產品資訊",
-      fact1Label: "試用",
-      fact1Value: "免費 7 天",
+      fact1Label: "模式",
+      fact1Value: "問答搜尋",
       fact2Label: "解鎖",
       fact2Value: "一次購買 US$2.99",
       fact3Label: "隱私",
@@ -284,11 +284,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "簡單定價",
-      title: "免費試用一週，一次購買解鎖。",
+      title: "一次購買，完整解鎖。",
       text: "FindText 旨在成為日常工具，而不是每個月都需要重新權衡的訂閱。",
       label: "完整解鎖",
       price: "US$2.99",
-      panelText: "7 天免費試用後一次性購買。",
+      panelText: "一次性購買即可完整解鎖。",
       bullets: [
         "為筆記、文件、日誌與程式碼提供本機多資料夾搜尋",
         "為不熟悉正則的使用者提供問答模式",
@@ -296,7 +296,7 @@ const translations = {
         "可選擇的取代預覽與工作階段復原",
         "歷史快照、複製操作與報告匯出"
       ],
-      button: "開始 7 天免費試用"
+      button: "在 Mac App Store 查看"
     },
     faq: {
       eyebrow: "常見問題",
@@ -337,8 +337,8 @@ const translations = {
       primaryAction: "Download on the Mac App Store",
       secondaryAction: "View product shots",
       factsAria: "Product facts",
-      fact1Label: "Trial",
-      fact1Value: "7 days free",
+      fact1Label: "Mode",
+      fact1Value: "Guided search",
       fact2Label: "Unlock",
       fact2Value: "US$2.99 once",
       fact3Label: "Privacy",
@@ -428,11 +428,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "Simple pricing",
-      title: "Try it for a week. Unlock it once.",
+      title: "Unlock it once. Use it every day.",
       text: "FindText is meant to become a daily utility, not a subscription you have to justify every month.",
       label: "Full unlock",
       price: "US$2.99",
-      panelText: "One-time purchase after the 7-day free trial.",
+      panelText: "One-time purchase. No subscription.",
       bullets: [
         "Local multi-folder search for notes, documents, logs, and code",
         "Question Mode for users who do not know regex",
@@ -440,7 +440,7 @@ const translations = {
         "Selectable replacement previews and session undo",
         "History snapshots, copy actions, and report export"
       ],
-      button: "Start your 7-day free trial"
+      button: "View on the Mac App Store"
     },
     faq: {
       eyebrow: "FAQ",
@@ -481,8 +481,8 @@ const translations = {
       primaryAction: "Im Mac App Store laden",
       secondaryAction: "Produktbilder ansehen",
       factsAria: "Produktdaten",
-      fact1Label: "Testphase",
-      fact1Value: "7 Tage kostenlos",
+      fact1Label: "Modus",
+      fact1Value: "Geführte Suche",
       fact2Label: "Freischaltung",
       fact2Value: "Einmalig US$2.99",
       fact3Label: "Datenschutz",
@@ -572,11 +572,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "Einfache Preise",
-      title: "Eine Woche testen. Einmal freischalten.",
+      title: "Einmal freischalten. Täglich nutzen.",
       text: "FindText soll ein tägliches Werkzeug werden, kein Abo, das du jeden Monat neu rechtfertigen musst.",
       label: "Voll freischalten",
       price: "US$2.99",
-      panelText: "Einmaliger Kauf nach der 7-tägigen kostenlosen Testphase.",
+      panelText: "Einmaliger Kauf. Kein Abo.",
       bullets: [
         "Lokale Mehrordnersuche für Notizen, Dokumente, Logs und Code",
         "Fragemodus für Nutzer ohne Regex-Kenntnisse",
@@ -584,7 +584,7 @@ const translations = {
         "Auswählbare Ersetzungsvorschauen und Sitzungs-Undo",
         "Verlaufsschnappschüsse, Kopieraktionen und Berichtsexport"
       ],
-      button: "7 Tage kostenlos testen"
+      button: "Im Mac App Store ansehen"
     },
     faq: {
       eyebrow: "FAQ",
@@ -625,8 +625,8 @@ const translations = {
       primaryAction: "Descargar en Mac App Store",
       secondaryAction: "Ver capturas del producto",
       factsAria: "Datos del producto",
-      fact1Label: "Prueba",
-      fact1Value: "7 días gratis",
+      fact1Label: "Modo",
+      fact1Value: "Búsqueda guiada",
       fact2Label: "Desbloqueo",
       fact2Value: "US$2.99 una vez",
       fact3Label: "Privacidad",
@@ -716,11 +716,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "Precio simple",
-      title: "Pruébalo una semana. Desbloquéalo una vez.",
+      title: "Desbloquéalo una vez. Úsalo cada día.",
       text: "FindText está pensado para ser una utilidad diaria, no una suscripción que tengas que justificar cada mes.",
       label: "Desbloqueo completo",
       price: "US$2.99",
-      panelText: "Compra única tras la prueba gratuita de 7 días.",
+      panelText: "Compra única. Sin suscripción.",
       bullets: [
         "Búsqueda local en varias carpetas para notas, documentos, registros y código",
         "Modo Pregunta para usuarios que no conocen regex",
@@ -728,7 +728,7 @@ const translations = {
         "Vistas previas de reemplazo seleccionables y deshacer de sesión",
         "Instantáneas de historial, acciones de copia y exportación de informes"
       ],
-      button: "Iniciar prueba gratuita de 7 días"
+      button: "Ver en Mac App Store"
     },
     faq: {
       eyebrow: "FAQ",
@@ -769,8 +769,8 @@ const translations = {
       primaryAction: "Télécharger sur le Mac App Store",
       secondaryAction: "Voir les captures produit",
       factsAria: "Informations produit",
-      fact1Label: "Essai",
-      fact1Value: "7 jours gratuits",
+      fact1Label: "Mode",
+      fact1Value: "Recherche guidée",
       fact2Label: "Déblocage",
       fact2Value: "US$2.99 une fois",
       fact3Label: "Confidentialité",
@@ -860,11 +860,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "Prix simple",
-      title: "Essayez une semaine. Débloquez une fois.",
+      title: "Débloquez une fois. Utilisez chaque jour.",
       text: "FindText est destiné à devenir un utilitaire quotidien, pas un abonnement à justifier chaque mois.",
       label: "Déblocage complet",
       price: "US$2.99",
-      panelText: "Achat unique après l’essai gratuit de 7 jours.",
+      panelText: "Achat unique. Sans abonnement.",
       bullets: [
         "Recherche locale multi-dossiers pour notes, documents, journaux et code",
         "Mode Questions pour les personnes qui ne connaissent pas les regex",
@@ -872,7 +872,7 @@ const translations = {
         "Aperçus de remplacement sélectionnables et annulation de session",
         "Instantanés d’historique, actions de copie et export de rapports"
       ],
-      button: "Commencer l’essai gratuit de 7 jours"
+      button: "Voir sur le Mac App Store"
     },
     faq: {
       eyebrow: "FAQ",
@@ -913,8 +913,8 @@ const translations = {
       primaryAction: "Scarica dal Mac App Store",
       secondaryAction: "Vedi schermate del prodotto",
       factsAria: "Dati del prodotto",
-      fact1Label: "Prova",
-      fact1Value: "7 giorni gratis",
+      fact1Label: "Modalità",
+      fact1Value: "Ricerca guidata",
       fact2Label: "Sblocco",
       fact2Value: "US$2.99 una volta",
       fact3Label: "Privacy",
@@ -1004,11 +1004,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "Prezzo semplice",
-      title: "Provalo per una settimana. Sbloccalo una volta.",
+      title: "Sbloccalo una volta. Usalo ogni giorno.",
       text: "FindText è pensato per diventare un’utilità quotidiana, non un abbonamento da giustificare ogni mese.",
       label: "Sblocco completo",
       price: "US$2.99",
-      panelText: "Acquisto una tantum dopo la prova gratuita di 7 giorni.",
+      panelText: "Acquisto una tantum. Nessun abbonamento.",
       bullets: [
         "Ricerca locale multi-cartella per note, documenti, log e codice",
         "Modalità Domande per utenti che non conoscono regex",
@@ -1016,7 +1016,7 @@ const translations = {
         "Anteprime di sostituzione selezionabili e annullamento di sessione",
         "Snapshot cronologia, azioni di copia ed esportazione report"
       ],
-      button: "Inizia la prova gratuita di 7 giorni"
+      button: "Vedi su Mac App Store"
     },
     faq: {
       eyebrow: "FAQ",
@@ -1057,8 +1057,8 @@ const translations = {
       primaryAction: "Mac App Store でダウンロード",
       secondaryAction: "製品画面を見る",
       factsAria: "製品情報",
-      fact1Label: "試用",
-      fact1Value: "7 日間無料",
+      fact1Label: "モード",
+      fact1Value: "質問検索",
       fact2Label: "解除",
       fact2Value: "一回購入 US$2.99",
       fact3Label: "プライバシー",
@@ -1148,11 +1148,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "シンプルな価格",
-      title: "1 週間試して、一度だけ購入。",
+      title: "一度購入して、毎日使えます。",
       text: "FindText は毎月正当化するサブスクリプションではなく、日常のユーティリティになることを目指しています。",
       label: "フル解除",
       price: "US$2.99",
-      panelText: "7 日間無料試用後の一回購入。",
+      panelText: "一回購入。サブスクリプションではありません。",
       bullets: [
         "ノート、ドキュメント、ログ、コードのローカル複数フォルダ検索",
         "正規表現を知らないユーザーのための質問モード",
@@ -1160,7 +1160,7 @@ const translations = {
         "選択可能な置換プレビューとセッション取り消し",
         "履歴スナップショット、コピー操作、レポート書き出し"
       ],
-      button: "7 日間無料試用を開始"
+      button: "Mac App Store で見る"
     },
     faq: {
       eyebrow: "FAQ",
@@ -1201,8 +1201,8 @@ const translations = {
       primaryAction: "Скачать в Mac App Store",
       secondaryAction: "Посмотреть скриншоты",
       factsAria: "Сведения о продукте",
-      fact1Label: "Пробный период",
-      fact1Value: "7 дней бесплатно",
+      fact1Label: "Режим",
+      fact1Value: "Пошаговый поиск",
       fact2Label: "Разблокировка",
       fact2Value: "Разово US$2.99",
       fact3Label: "Приватность",
@@ -1292,11 +1292,11 @@ const translations = {
     },
     pricing: {
       eyebrow: "Простая цена",
-      title: "Попробуйте неделю. Разблокируйте один раз.",
+      title: "Разблокируйте один раз. Пользуйтесь каждый день.",
       text: "FindText задуман как ежедневная утилита, а не подписка, которую нужно оправдывать каждый месяц.",
       label: "Полная разблокировка",
       price: "US$2.99",
-      panelText: "Разовая покупка после 7-дневного бесплатного пробного периода.",
+      panelText: "Разовая покупка. Без подписки.",
       bullets: [
         "Локальный поиск по нескольким папкам для заметок, документов, логов и кода",
         "Режим вопросов для пользователей, которые не знают regex",
@@ -1304,7 +1304,7 @@ const translations = {
         "Выбираемые предпросмотры замены и отмена в рамках сессии",
         "Снимки истории, действия копирования и экспорт отчетов"
       ],
-      button: "Начать 7-дневный бесплатный пробный период"
+      button: "Смотреть в Mac App Store"
     },
     faq: {
       eyebrow: "FAQ",
