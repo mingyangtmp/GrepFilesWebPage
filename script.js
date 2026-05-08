@@ -1,4 +1,4 @@
-const APP_STORE_URL = "https://apps.apple.com/app/id0000000000";
+const APP_STORE_URL = "macappstore://apps.apple.com/cn/app/findtext-pro/id6765620148?mt=12";
 const STORAGE_KEY = "findtext.locale";
 const DEFAULT_LOCALE = "en";
 const SUPPORTED_LOCALES = ["zh-Hans", "zh-Hant", "en", "de", "es", "fr", "it", "ja", "ru"];
